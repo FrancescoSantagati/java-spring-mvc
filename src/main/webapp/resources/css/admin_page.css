@@ -1,0 +1,89 @@
+
+/*PRENOTAZIONI*/
+
+#admin-prenotazione-container {
+    padding: 1em;
+}
+
+.admin-prenotazione-tile {
+    background-color: papayawhip;
+    display: inline-block;
+    padding: 1em;
+    margin: 0.5em;
+    font-family: RobotoCondensed-Regular;
+    font-size: 1.3em;
+    border-radius: 5px;
+    border: #555 solid 1px;
+    vertical-align: top;
+}
+
+.admin-prenotazione-pizze {
+    text-align: left;
+}
+
+.admin-prenotazione-pizza-el {
+    width: 100%;
+}
+
+.admin-prenotazione-type-pizza {
+    display: inline-block;
+    width: 70%;
+}
+
+.admin-prenotazione-type-quantita {
+    display: inline-block;
+    width: 25%;
+}
+
+.admin-prenotazione-username {
+    margin-bottom: 0.5em;
+    font-family: RobotoCondensed-Bold;
+}
+
+.admin-prenotazione-data {
+    margin-top: 0.5em;
+    font-family: RobotoCondensed-Italic;
+}
+
+.admin-prenotazione-actions {
+    width: 100%;
+    display: inline-block;
+}
+
+.admin-prenotazione-conferma-on, .admin-prenotazione-conferma-off, .admin-prenotazione-cancella {
+    width: 40px;
+    margin: 0.7em;
+}
+
+/*CATALOGO*/
+
+#admin-catalogo-pizze-add {
+    width: 100px;
+}
+
+#admin-catalogo-pizze-table {
+    width: 100%;
+    margin: 1em 0;
+    font-family: RobotoCondensed-Regular;
+}
+
+#model-validation {
+    color: red;
+    display: none;
+    text-align: center;
+}
+
+.admin-catalogo-pizze-nome {
+    font-family: RobotoCondensed-Bold;
+}
+
+.admin-catalogo-pizze-prezzo {
+    text-align: center;
+    padding: 1em;
+    min-width: 80px;
+}
+
+.admin-catalogo-pizze-update, .admin-catalogo-pizze-delete {
+    width: 40px;
+    margin: 0.7em;
+}
