@@ -1,77 +1,30 @@
 apply plugin: 'java'
+apply plugin: 'maven'
 
-group 'it.francescosantagati'
-version '1.0-SNAPSHOT'
+group = 'com.springapp'
+version = '1.0-SNAPSHOT'
 
-JDK_VERSION = "1.7"
-SPRING_VERSION = "3.2.8.RELEASE"
-SPRING_SECURITY_VERSION = "3.2.3.RELEASE"
-JSTL_VERSION = "1.2"
-MYSQL_VERSION = "5.1.30"
+description = """pizzeria"""
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+
 
 repositories {
-    mavenCentral()
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
 }
-
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-
-    compile "org.springframework:spring-core:${SPRING_VERSION}"
-    compile "org.springframework:spring-web:${SPRING_VERSION}"
-    compile "org.springframework:spring-webmvc:${SPRING_VERSION}"
-    compile "org.springframework:spring-jdbc:${SPRING_VERSION}"
-
-//    <dependency>
-//    <groupId>org.springframework</groupId>
-//            <artifactId>spring-jdbc</artifactId>
-//    <version>${spring.version}</version>
-//        </dependency>
-//
-//    <!-- Spring Security -->
-//    <dependency>
-//    <groupId>org.springframework.security</groupId>
-//            <artifactId>spring-security-web</artifactId>
-//    <version>${spring.security.version}</version>
-//        </dependency>
-//
-//    <dependency>
-//    <groupId>org.springframework.security</groupId>
-//            <artifactId>spring-security-config</artifactId>
-//    <version>${spring.security.version}</version>
-//        </dependency>
-//
-//    <!-- Spring Security JSP Taglib -->
-//    <dependency>
-//    <groupId>org.springframework.security</groupId>
-//            <artifactId>spring-security-taglibs</artifactId>
-//    <version>${spring.security.version}</version>
-//        </dependency>
-//
-//    <!-- jstl for jsp page -->
-//    <dependency>
-//    <groupId>jstl</groupId>
-//            <artifactId>jstl</artifactId>
-//    <version>${jstl.version}</version>
-//        </dependency>
-//
-//    <dependency>
-//    <groupId>mysql</groupId>
-//            <artifactId>mysql-connector-java</artifactId>
-//    <version>${mysql.connector.version}</version>
-//        </dependency>
-//
-//    <dependency>
-//    <groupId>javax.servlet</groupId>
-//            <artifactId>servlet-api</artifactId>
-//    <version>2.5</version>
-//        </dependency>
-//
-//    <dependency>
-//    <groupId>javax.servlet.jsp</groupId>
-//            <artifactId>jsp-api</artifactId>
-//    <version>2.1</version>
-//            <scope>provided</scope>
-//    </dependency>
-//    </dependencies>
-
+    compile group: 'org.springframework', name: 'spring-core', version:'3.2.8.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version:'3.2.8.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version:'3.2.8.RELEASE'
+    compile group: 'org.springframework', name: 'spring-jdbc', version:'3.2.8.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-web', version:'3.2.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-config', version:'3.2.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-taglibs', version:'3.2.3.RELEASE'
+    compile group: 'jstl', name: 'jstl', version:'1.2'
+    compile group: 'mysql', name: 'mysql-connector-java', version:'5.1.30'
+    compile group: 'javax.servlet', name: 'servlet-api', version:'2.5'
+    providedCompile group: 'javax.servlet.jsp', name: 'jsp-api', version:'2.1'
 }
